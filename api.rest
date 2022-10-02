@@ -1,0 +1,73 @@
+###
+
+GET http://localhost:4000/api/usuarios
+
+###
+
+POST http://localhost:4000/api/usuarios
+Content-Type: application/json
+
+{
+    "nombres": "El chamo",
+    "apellidos": "es maraco",
+    "tipoIdentificacion": "asd",
+    "identificacion": "sad",
+    "rol": "Administrador",
+    "celular": "gsdfds",
+    "residencia": "asdasda",
+    "correo": "sadasddf",
+    "contrasena": "gdfdffd",
+    "fechaNacimiento": "ghgfgfgf",
+    "estado": "hghjgjfg",
+    "foto": "https://cdn.pixabay.com/photo/2020/10/11/03/16/silhouette-5644656__340.jpg"
+  
+}
+
+###
+
+GET http://localhost:4000/api/usuarios/63384a0f501e890d8090093e
+
+###
+DELETE http://localhost:4000/api/usuarios/63384a0f501e890d8090093e
+
+
+###
+PUT http://localhost:4000/api/usuarios/63386c9741d868b5723f01f3
+Content-Type: application/json
+
+{
+    "rol": "Administrador"    
+}
+
+###
+
+POST http://localhost:4000/api/usuarios/signup
+Content-Type: application/json
+
+{
+    "nombres": "El chamo",
+    "apellidos": "es maraco",
+    "tipoIdentificacion": "asd",
+    "identificacion": "sad",
+    "rol": "Administrador",
+    "celular": "gsdfds",
+    "residencia": "asdasda",
+    "correo": "sadasddf",
+    "contrasena": "gdfdffd",
+    "fechaNacimiento": "ghgfgfgf",
+    "estado": "hghjgjfg",
+    "foto": "https://cdn.pixabay.com/photo/2020/10/11/03/16/silhouette-5644656__340.jpg"
+
+}
+
+###
+
+POST http://localhost:4000/api/usuarios/signin
+Content-Type: application/json
+
+{
+    "correo": "sadasddf",
+    "contrasena": "gdfdffd"
+    
+
+}
