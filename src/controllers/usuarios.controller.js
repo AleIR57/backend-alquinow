@@ -59,8 +59,9 @@ usuarioCtrl.loginUsuario = async (req,res) =>{
     if(usuario.contrasena !== contrasena) return res.status(401).send('Contraseña incorrecta');
 
     const token = jwt.sign({_id: usuario._id}, 'Suje');
+    const id = usuario._id;
 
-    return res.status(200).json({token});
+    return res.status(200).json({token, id});
 }
 
 

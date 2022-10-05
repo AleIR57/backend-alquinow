@@ -68,6 +68,88 @@ Content-Type: application/json
 {
     "correo": "sadasddf",
     "contrasena": "gdfdffd"
-    
-
 }
+
+
+###
+
+GET http://localhost:4000/api/productos
+
+###
+
+POST http://localhost:4000/api/productos
+Content-Type: application/json
+
+{
+    "nombreProducto": "Chamo",
+    "detalleProducto": "Chamo",
+    "calificacion": "Chamo",
+    "idUsuarioPoseedor": "Chamo",
+    "descripcion": "Chamo",
+    "precioAlquiler": "Chamo",
+    "tiempoAlquiler": "Chamo",
+    "marca": "Chamo",
+    "modelo": "Chamo",
+    "foto": "Chamo",
+    "estado": "Chamo",
+    "idUsuarioAlquilador": "Chamo"
+}
+
+###
+
+GET http://localhost:4000/api/productos/633cd318f3febc8939002054
+
+###
+DELETE http://localhost:4000/api/productos/633cd2e9f3febc8939002052
+
+
+###
+PUT http://localhost:4000/api/productos/633cd318f3febc8939002054
+Content-Type: application/json
+
+{
+    "nombreProducto": "Administrador"    
+}
+
+###
+
+GET http://localhost:4000/api/servicios
+
+###
+
+###
+
+POST http://localhost:4000/api/servicios
+Content-Type: application/json
+
+{
+    "nombreServicio": "Chamo",
+    "detalleServicio": "Chamo",
+    "calificacion": "Chamo",
+    "idUsuarioPoseedor": "Chamo",
+    "descripcion": "Chamo",
+    "precioAlquiler": "Chamo",
+    "tiempoAlquiler": "Chamo",
+    "marca": "Chamo",
+    "modelo": "Chamo",
+    "foto": "Chamo",
+    "estado": "Chamo",
+    "idUsuarioAlquilador": "Chamo"
+}
+
+###
+
+GET http://localhost:4000/api/servicios/633cd318f3febc8939002054
+
+###
+DELETE http://localhost:4000/api/servicios/633cd2e9f3febc8939002052
+
+
+###
+PUT http://localhost:4000/api/servicios/633cd318f3febc8939002054
+Content-Type: application/json
+
+{
+    "nombreServicio": "Administrador"    
+}
+
