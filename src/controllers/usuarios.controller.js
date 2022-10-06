@@ -20,6 +20,7 @@ usuarioCtrl.crearUsuario = async (req,res) => {
     const nuevoUsuario =  new Usuario(req.body);
     await nuevoUsuario.save();
     
+    
     res.send({message: 'Usuario creado'});
 
 }
