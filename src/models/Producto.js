@@ -1,5 +1,9 @@
 const { Schema, model } = require('mongoose');
 
+const FotosProducto = new Schema({
+    fotoDetallada: {type: String, required: false},
+})
+
 const productoSchema = new Schema({
     nombreProducto: {type: String, required: false},
     detalleProducto: {type: String, required: false},
@@ -13,6 +17,8 @@ const productoSchema = new Schema({
     foto: {type: String, required: false},
     estado: {type: String, required: false},
     idUsuarioAlquilador: {type: String, required: false},
+    fotosDetalladas: [String],
+    video: {type: [Schema.Types.Mixed], required: false},
 }, {
     timestamps: true,
     versionKey: false
